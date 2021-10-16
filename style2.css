@@ -1,0 +1,92 @@
+body {
+	margin: 0;
+	text-align: center;
+	font-family: 'Merriweather', serif;
+}
+h1 {
+	margin: 50px auto 0px auto;
+	font-family: 'Sacramento', cursive;
+	font-size: 5.625em;
+	color: #66bfbf;
+}
+h2 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 2.5rem;
+	color: #66bfbf;
+	font-weight: normal;
+}
+h3 {
+	font-family: 'Montserrat', sans-serif;
+	color: #11999e;
+}
+
+.tc {
+	position: relative;
+	padding-top: 100px;
+	background-color: #e4f9f5;
+}
+.og {
+	font-style: italic;
+	text-decoration: underline;
+}
+.tpp {
+	position: absolute;
+	right: 300px;
+	top: 50px;
+}
+.hpp {
+	position: absolute;
+	left: 300px;
+	bottom: 300px;
+}
+.prof {
+	width: 180px;
+	height: 180px;
+	border-radius: 90px;
+	object-fit: cover;
+}
+.skill-row {
+	width: 50%;
+	margin: 100px auto 100px auto;
+	text-align: left;
+	line-height: 2;
+}
+.n1 {
+	width: 25%;
+	float: left;
+	margin-right: 30px;
+	border-radius: 20px;
+	height: 150px;
+	object-fit: cover;
+}
+.n2 {
+	width: 25%;
+	float: right;
+	margin-left: 30px;
+	border-radius: 20px;
+	height: 150px;
+	object-fit: cover;
+}
+.n3 {
+	width: 25%;
+	float: left;
+	margin-right: 30px;
+	border-radius: 20px;
+	height: 150px;
+	object-fit: cover;
+}
+.gr {
+	animation-duration: 2s;
+	animation-name: slidein;
+}
+
+@keyframes slidein {
+	from {
+		margin-left: 80%;
+		width: 300%;
+	}
+
+	to {
+		width: 100%;
+	}
+}
