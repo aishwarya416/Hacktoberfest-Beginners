@@ -1,0 +1,50 @@
+class odd implements Runnable{
+Thread t;
+odd(){
+t = new Thread(this);
+t.start();
+}
+public void run(){
+try{
+for(int i=1;i<=20;i=i+2){
+System.out.println(i);
+t.sleep(500);
+}
+}
+catch(Exception e){
+System.out.println(e);
+}
+}
+}
+
+
+class even implements Runnable{
+Thread t;
+even(){
+t= new Thread(this);
+t.start();
+}
+public void run(){
+try{
+for(int j=2;j<=20;j=j+2){
+System.out.println(j);
+t.sleep(500);
+}
+}
+catch(Exception e){
+System.out.println(e);
+}
+}
+}
+class mult{
+public static void main(String args[]){
+odd a = new odd();
+even b = new even();
+try{
+Thread.sleep(30000);
+}
+catch(Exception  e){
+System.out.println(e);
+}
+}
+}
